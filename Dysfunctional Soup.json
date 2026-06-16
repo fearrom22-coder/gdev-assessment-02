@@ -902,16 +902,13 @@
       },
       "objectsGroups": [
         {
-          "name": "food",
+          "name": "plateless",
           "objects": [
             {
               "name": "Pancakes"
             },
             {
               "name": "Apple_Pie"
-            },
-            {
-              "name": "Ramen"
             },
             {
               "name": "Bagel"
@@ -926,9 +923,50 @@
               "name": "Bread"
             }
           ]
+        },
+        {
+          "name": "s_teir_foods",
+          "objects": [
+            {
+              "name": "Burger_Dish"
+            },
+            {
+              "name": "Burrito_Dish"
+            },
+            {
+              "name": "Dumplings_Dish"
+            },
+            {
+              "name": "Frenchfries_Dish"
+            },
+            {
+              "name": "Garlicbread_Dish"
+            },
+            {
+              "name": "Giantgummybear_Dish"
+            },
+            {
+              "name": "Meatball_Dish"
+            },
+            {
+              "name": "Pizza_Dish"
+            },
+            {
+              "name": "Spaghetti"
+            },
+            {
+              "name": "Taco_Dish"
+            }
+          ]
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "name": "eating",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -957,8 +995,8 @@
           "name": "Bagel",
           "persistentUuid": "d6739c2c-74be-4c91-8b58-4d7075de0b19",
           "width": 105,
-          "x": 1067,
-          "y": 194,
+          "x": 828,
+          "y": 492,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -974,8 +1012,8 @@
           "name": "Bacon",
           "persistentUuid": "c2ddfdb1-92c8-4711-84de-288d54eaeb0c",
           "width": 94,
-          "x": 1014,
-          "y": 296,
+          "x": 669,
+          "y": 509,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -991,8 +1029,8 @@
           "name": "Baguette",
           "persistentUuid": "e6dc0678-05c5-44af-bf43-c6422ff92b57",
           "width": 118,
-          "x": 937,
-          "y": 486,
+          "x": 326,
+          "y": 502,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -1008,8 +1046,8 @@
           "name": "Bread",
           "persistentUuid": "c32d5df3-c4a8-44aa-9975-8b9b245cebef",
           "width": 100,
-          "x": 883,
-          "y": 329,
+          "x": 502,
+          "y": 507,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -4576,7 +4614,13 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "checkCollisionMask": true,
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -4637,7 +4681,13 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "checkCollisionMask": true,
+              "name": "Draggable",
+              "type": "DraggableBehavior::Draggable"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -5723,55 +5773,7 @@
               },
               "parameters": [
                 "eggy",
-                "food",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "eggy",
-                "Animation",
-                "=",
-                "\"happy\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "food",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "eggy",
-                "food",
+                "plateless",
                 "",
                 "",
                 ""
@@ -5788,6 +5790,123 @@
                 "Animation",
                 "=",
                 "\"shock\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "eggy",
+                "plateless",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "eating",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "eggy",
+                "Animation",
+                "=",
+                "\"happy\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "plateless",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "eating",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "eggy",
+                "plateless",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "eating",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "eggy",
+                "Animation",
+                "=",
+                "\"unsure\""
               ]
             }
           ]
