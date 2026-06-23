@@ -1312,9 +1312,9 @@
           "value": 0
         },
         {
-          "name": "room_temp",
-          "type": "number",
-          "value": 0
+          "name": "temp_issues",
+          "type": "boolean",
+          "value": false
         },
         {
           "name": "random_num",
@@ -5919,6 +5919,180 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "egg frames/egg 7.png",
+                      "points": [
+                        {
+                          "name": "head",
+                          "x": 16,
+                          "y": 5.5
+                        },
+                        {
+                          "name": "neck",
+                          "x": 16.5,
+                          "y": 19.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 20,
+                            "y": 26
+                          },
+                          {
+                            "x": 12,
+                            "y": 26
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 21
+                          },
+                          {
+                            "x": 7,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 8,
+                            "y": 11.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 8
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 5
+                          },
+                          {
+                            "x": 19,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 21
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "egg frames/egg 8.png",
+                      "points": [
+                        {
+                          "name": "head",
+                          "x": 16,
+                          "y": 5.5
+                        },
+                        {
+                          "name": "neck",
+                          "x": 16.5,
+                          "y": 19.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 20,
+                            "y": 26
+                          },
+                          {
+                            "x": 12,
+                            "y": 26
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 21
+                          },
+                          {
+                            "x": 7,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 8,
+                            "y": 11.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 8
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 5
+                          },
+                          {
+                            "x": 19,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 21
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -8096,6 +8270,16 @@
                 "=",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "temp_issues",
+                "=",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -8117,13 +8301,11 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "temp control",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8197,7 +8379,17 @@
                       "parameters": [
                         "random_num",
                         "<",
-                        "2"
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "hat_count",
+                        "!=",
+                        "3"
                       ]
                     }
                   ],
@@ -8217,7 +8409,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -8244,64 +8435,72 @@
                     "eggy.PointY(\"head\")"
                   ]
                 }
-              ],
-              "events": [
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "hats",
-                        "is_worn",
-                        "=",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "DraggableBehavior::Dropped"
-                      },
-                      "parameters": [
-                        "hats",
-                        "Draggable"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "hat_count",
-                        "+",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "eggy_temp",
-                        "+",
-                        "3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanObjectVariable"
-                      },
-                      "parameters": [
-                        "hats",
-                        "is_worn",
-                        "True",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "hats",
+                    "is_worn",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DraggableBehavior::Dropped"
+                  },
+                  "parameters": [
+                    "hats",
+                    "Draggable"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionPoint"
+                  },
+                  "parameters": [
+                    "hats",
+                    "eggy.PointX(\"head\")",
+                    "eggy.PointY(\"head\")"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "hat_count",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "eggy_temp",
+                    "+",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "hats",
+                    "is_worn",
+                    "True",
+                    ""
                   ]
                 }
               ]
@@ -8380,8 +8579,136 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "eggy_temp",
+                ">=",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "eating",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "temp_issues",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "eggy",
+                "Animation",
+                "=",
+                "\"sad\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "eggy_temp",
+                "<=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "eating",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "temp_issues",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "eggy",
+                "Animation",
+                "=",
+                "\"sad\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "eggy_temp",
+                ">",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "eggy_temp",
+                "<",
+                "10"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "temp_issues",
+                "False",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
