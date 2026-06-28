@@ -1599,7 +1599,7 @@
           "persistentUuid": "d3af400b-5f5e-444a-b5f7-6277d94ca806",
           "width": 273,
           "x": 1031,
-          "y": 248,
+          "y": 261,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -1648,8 +1648,8 @@
           "name": "bucket",
           "persistentUuid": "2fe8ede1-b066-470c-9c34-7e1113695db7",
           "width": 132,
-          "x": 818,
-          "y": 573,
+          "x": 850,
+          "y": 246,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -1679,7 +1679,7 @@
           "height": 45,
           "keepRatio": true,
           "layer": "",
-          "name": "TinyBrownButton",
+          "name": "restart_button",
           "persistentUuid": "2c30bb7d-d079-4e30-84cc-13721ef37c99",
           "width": 116,
           "x": 130,
@@ -7709,26 +7709,6 @@
           ]
         },
         {
-          "assetStoreId": "ef527d6960e99d531577a337fcc5ea1de1b12ec5c3d509f130e9fe62e7a86df7",
-          "name": "BlueTinySwordsPixelBar",
-          "persistentUuid": "f5cc261f-c824-4985-bcf1-8ada6f896657",
-          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-          "variant": "Blue TinySwords Pixel Bar",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "InitialValue": 12,
-            "MaxValue": 16,
-            "BarTopPadding": 8,
-            "BarRightPadding": 10,
-            "BarBottomPadding": 8,
-            "BarLeftPadding": 10,
-            "PreviousHighValueDuration": 0,
-            "EasingDuration": 0.25
-          }
-        },
-        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "thermometer",
@@ -8379,6 +8359,70 @@
           ],
           "animations": [
             {
+              "name": "still",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bucket fames/water bucket0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 9,
+                        "y": 21
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13,
+                            "y": 12
+                          },
+                          {
+                            "x": 25,
+                            "y": 12
+                          },
+                          {
+                            "x": 31,
+                            "y": 16.5
+                          },
+                          {
+                            "x": 31,
+                            "y": 31
+                          },
+                          {
+                            "x": 25,
+                            "y": 38.5
+                          },
+                          {
+                            "x": 13,
+                            "y": 39
+                          },
+                          {
+                            "x": 8,
+                            "y": 31.5
+                          },
+                          {
+                            "x": 8,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "name": "splashing",
               "useMultipleDirections": false,
               "directions": [
@@ -8486,70 +8530,6 @@
                           {
                             "x": 5,
                             "y": 8
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "still",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "bucket fames/water bucket0.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 9,
-                        "y": 21
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 13,
-                            "y": 12
-                          },
-                          {
-                            "x": 25,
-                            "y": 12
-                          },
-                          {
-                            "x": 31,
-                            "y": 16.5
-                          },
-                          {
-                            "x": 31,
-                            "y": 31
-                          },
-                          {
-                            "x": 25,
-                            "y": 38.5
-                          },
-                          {
-                            "x": 13,
-                            "y": 39
-                          },
-                          {
-                            "x": 8,
-                            "y": 31.5
-                          },
-                          {
-                            "x": 8,
-                            "y": 16
                           }
                         ]
                       ]
@@ -8791,7 +8771,7 @@
         },
         {
           "assetStoreId": "50bc5fdef6bedec09c3db84b6e6c2498d86d55cc8421e8bf47fc002e947338c1",
-          "name": "TinyBrownButton",
+          "name": "restart_button",
           "persistentUuid": "4faf2cac-1e9e-4b5c-a8c5-13ba5d1460b1",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variant": "Tiny Brown Button",
@@ -9000,9 +8980,6 @@
             "objectName": "red_hat"
           },
           {
-            "objectName": "BlueTinySwordsPixelBar"
-          },
-          {
             "objectName": "thermometer"
           },
           {
@@ -9012,7 +8989,7 @@
             "objectName": "bucket"
           },
           {
-            "objectName": "TinyBrownButton"
+            "objectName": "restart_button"
           },
           {
             "objectName": "water_drop"
@@ -9082,7 +9059,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "TinyBrownButton",
+                "restart_button",
                 ""
               ]
             }
@@ -9401,6 +9378,35 @@
                             "1"
                           ]
                         }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "hat_count",
+                                ">=",
+                                "3"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "eggy_temp",
+                                "+",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     },
                     {
@@ -9412,7 +9418,7 @@
                           },
                           "parameters": [
                             "random_num",
-                            ">",
+                            "<",
                             "2"
                           ]
                         }
@@ -9439,29 +9445,8 @@
                           },
                           "parameters": [
                             "random_num",
-                            "<",
+                            ">=",
                             "3"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "hat_count",
-                            "!=",
-                            "3"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "eggy_temp",
-                            "<=",
-                            "1"
                           ]
                         }
                       ],
