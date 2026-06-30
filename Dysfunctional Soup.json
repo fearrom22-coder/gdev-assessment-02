@@ -1320,6 +1320,17 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/Pixel art/6b410f07a3a02e721a49d41795e84b56707ef28ac4d095d55f1fd1093760e134_8BitOperatorPlus8Regular_Edited.fnt",
           "name": "8BitOperatorPlus8Regular_Edited.fnt"
         }
+      },
+      {
+        "file": "assets/kenvector_future_thin.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },
@@ -1352,7 +1363,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7876290101673766,
+        "zoomFactor": 0.8416428125373117,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1547,8 +1558,8 @@
           "name": "blue_hat",
           "persistentUuid": "76f8e314-15dc-4092-8fbf-861cb540225b",
           "width": 273,
-          "x": 1038,
-          "y": 146,
+          "x": 1036,
+          "y": 266,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1581,8 +1592,8 @@
           "name": "purple_hat",
           "persistentUuid": "ce2a5a89-9fd7-4d0a-8ca3-64ac35767665",
           "width": 273,
-          "x": 1034,
-          "y": 385,
+          "x": 1032,
+          "y": 266,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -1599,7 +1610,7 @@
           "persistentUuid": "d3af400b-5f5e-444a-b5f7-6277d94ca806",
           "width": 273,
           "x": 1031,
-          "y": 261,
+          "y": 262,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -1611,7 +1622,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "NewText",
+          "name": "timer_text",
           "persistentUuid": "46e762ec-cdad-4730-8972-81842aa39c47",
           "width": 0,
           "x": 1414,
@@ -1648,8 +1659,8 @@
           "name": "bucket",
           "persistentUuid": "2fe8ede1-b066-470c-9c34-7e1113695db7",
           "width": 132,
-          "x": 850,
-          "y": 246,
+          "x": 999,
+          "y": 391,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -1685,6 +1696,23 @@
           "x": 130,
           "y": 48,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 63,
+          "keepRatio": true,
+          "layer": "",
+          "name": "timer_text",
+          "persistentUuid": "71f07302-21ee-4de8-bcbf-6e257d2328dd",
+          "width": 435,
+          "x": 538,
+          "y": 579,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8301,7 +8329,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "NewText",
+          "name": "timer_text",
           "persistentUuid": "892fcf44-64f8-4f28-8ade-1a75bfba8fb1",
           "smoothed": true,
           "type": "TextObject::Text",
@@ -8310,9 +8338,9 @@
           "effects": [],
           "behaviors": [],
           "string": "Text",
-          "font": "",
+          "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
           "textAlignment": "left",
-          "characterSize": 20,
+          "characterSize": 60,
           "color": {
             "b": 0,
             "g": 0,
@@ -8333,10 +8361,10 @@
             "smoothed": true,
             "underlined": false,
             "text": "Text",
-            "font": "",
+            "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
-            "characterSize": 20,
+            "characterSize": 60,
             "lineHeight": 0,
             "color": "0;0;0"
           }
@@ -8983,7 +9011,7 @@
             "objectName": "thermometer"
           },
           {
-            "objectName": "NewText"
+            "objectName": "timer_text"
           },
           {
             "objectName": "bucket"
@@ -9060,6 +9088,27 @@
                 "=",
                 "261"
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"scene timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "bucket",
+                "=",
+                "1000",
+                "=",
+                "390\n"
+              ]
             }
           ]
         },
@@ -9127,6 +9176,27 @@
                 "=",
                 "261"
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"scene timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "bucket",
+                "=",
+                "1000",
+                "=",
+                "390\n"
+              ]
             }
           ]
         },
@@ -9150,10 +9220,10 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "NewText",
+                "timer_text",
                 "Text",
                 "=",
-                "eggy_temp"
+                "ToString(roundTo(TimerElapsedTime(\"scene timer\"),3 ))"
               ]
             }
           ]
@@ -9172,62 +9242,45 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "UnPauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"scene timer\""
+              ]
+            }
+          ],
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "eggy",
-                    "plateless",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "eggy",
-                    "Animation",
-                    "=",
-                    "\"shock\""
-                  ]
-                }
-              ],
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "food control",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "MouseButtonFromTextReleased"
+                        "value": "CollisionNP"
                       },
                       "parameters": [
+                        "eggy",
+                        "plateless",
                         "",
-                        "\"Left\""
+                        "",
+                        ""
                       ]
                     }
                   ],
                   "actions": [
-                    {
-                      "type": {
-                        "value": "SetBooleanVariable"
-                      },
-                      "parameters": [
-                        "eating",
-                        "True",
-                        ""
-                      ]
-                    },
                     {
                       "type": {
                         "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -9236,96 +9289,137 @@
                         "eggy",
                         "Animation",
                         "=",
-                        "\"happy\""
+                        "\"shock\""
                       ]
-                    },
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MouseButtonFromTextReleased"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Left\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "eating",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "eggy",
+                            "Animation",
+                            "=",
+                            "\"happy\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "plateless",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            "0.5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "eating",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
-                        "value": "Delete"
+                        "inverted": true,
+                        "value": "CollisionNP"
                       },
                       "parameters": [
+                        "eggy",
                         "plateless",
+                        "",
+                        "",
                         ""
                       ]
                     },
                     {
                       "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "0.5"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanVariable"
+                        "value": "BooleanVariable"
                       },
                       "parameters": [
                         "eating",
-                        "False",
+                        "=",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "temp_issues",
+                        "=",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "eggy",
+                        "Animation",
+                        "=",
+                        "\"neutral\""
                       ]
                     }
                   ]
                 }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "eggy",
-                    "plateless",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "eating",
-                    "=",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "temp_issues",
-                    "=",
-                    ""
-                  ]
-                }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "eggy",
-                    "Animation",
-                    "=",
-                    "\"neutral\""
-                  ]
-                }
-              ]
+              "parameters": []
             },
             {
               "colorB": 228,
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "temp control",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -10020,61 +10114,56 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "pouring",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"water timer\"",
+                        ">=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"water timer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "eggy_temp",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ]
                 }
               ],
               "parameters": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "pouring",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CompareTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"water timer\"",
-                    ">=",
-                    "1"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"water timer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "eggy_temp",
-                    "-",
-                    "1"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             }
           ]
         },
@@ -10102,6 +10191,15 @@
                 "Animation",
                 "=",
                 "\"crying\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"scene timer\""
               ]
             }
           ]
