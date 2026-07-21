@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 271,
+    "build": 273,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -851,7 +851,7 @@
       {
         "file": "egg frames/egg 9.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"egg frames/egg 9.png\",\"extension\":\".png\"}",
         "name": "egg frames/egg 9.png",
         "smoothed": false,
         "userAdded": false
@@ -859,7 +859,7 @@
       {
         "file": "egg frames/egg 10.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"egg frames/egg 10.png\",\"extension\":\".png\"}",
         "name": "egg frames/egg 10.png",
         "smoothed": false,
         "userAdded": false
@@ -923,7 +923,7 @@
       {
         "file": "egg frames/egg happy 1.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"egg frames/egg happy 1.png\",\"extension\":\".png\"}",
         "name": "egg frames/egg happy 1.png",
         "smoothed": false,
         "userAdded": false
@@ -931,7 +931,7 @@
       {
         "file": "egg frames/egg happy 2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"egg frames/egg happy 2.png\",\"extension\":\".png\"}",
         "name": "egg frames/egg happy 2.png",
         "smoothed": false,
         "userAdded": false
@@ -1445,36 +1445,43 @@
       "variables": [
         {
           "name": "eating",
+          "persistentUuid": "e45149ee-3ed2-4d60-9787-9598d506d2ff",
           "type": "boolean",
           "value": false
         },
         {
           "name": "eggy_temp",
+          "persistentUuid": "1e035f9b-900e-4a5b-a683-fc0aec0f8120",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_issues",
+          "persistentUuid": "a6d090cb-5b6b-48ed-ba8a-6b22ba4f1ea4",
           "type": "boolean",
           "value": false
         },
         {
           "name": "random_num",
+          "persistentUuid": "36fb3dd1-9bc1-4c39-9c18-d9b2eb4aff89",
           "type": "number",
           "value": 0
         },
         {
           "name": "hat_count",
+          "persistentUuid": "f2769305-0c2d-4f58-8946-39e6a0196358",
           "type": "number",
           "value": 0
         },
         {
           "name": "dead",
+          "persistentUuid": "db3c450e-823b-4594-b58e-824ec6ac46ea",
           "type": "boolean",
           "value": false
         },
         {
           "name": "pouring",
+          "persistentUuid": "af638a6a-c44a-4606-83e1-5da4625c3e82",
           "type": "boolean",
           "value": false
         }
@@ -5415,6 +5422,380 @@
           "behaviors": [],
           "animations": [
             {
+              "name": "smile",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.25,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "egg frames/egg happy 1.png",
+                      "points": [
+                        {
+                          "name": "head",
+                          "x": 16,
+                          "y": 5.5
+                        },
+                        {
+                          "name": "neck",
+                          "x": 16.5,
+                          "y": 19.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 20,
+                            "y": 26
+                          },
+                          {
+                            "x": 12,
+                            "y": 26
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 21
+                          },
+                          {
+                            "x": 7,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 8,
+                            "y": 11.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 8
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 5
+                          },
+                          {
+                            "x": 19,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 21
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "egg frames/egg happy 2.png",
+                      "points": [
+                        {
+                          "name": "head",
+                          "x": 16,
+                          "y": 5.5
+                        },
+                        {
+                          "name": "neck",
+                          "x": 16.5,
+                          "y": 19.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 20,
+                            "y": 26
+                          },
+                          {
+                            "x": 12,
+                            "y": 26
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 21
+                          },
+                          {
+                            "x": 7,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 8,
+                            "y": 11.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 8
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 5
+                          },
+                          {
+                            "x": 19,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 21
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "unsure",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.25,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "egg frames/egg 9.png",
+                      "points": [
+                        {
+                          "name": "head",
+                          "x": 16,
+                          "y": 5.5
+                        },
+                        {
+                          "name": "neck",
+                          "x": 16.5,
+                          "y": 19.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 20,
+                            "y": 26
+                          },
+                          {
+                            "x": 12,
+                            "y": 26
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 21
+                          },
+                          {
+                            "x": 7,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 8,
+                            "y": 11.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 8
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 5
+                          },
+                          {
+                            "x": 19,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 21
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "egg frames/egg 10.png",
+                      "points": [
+                        {
+                          "name": "head",
+                          "x": 16,
+                          "y": 5.5
+                        },
+                        {
+                          "name": "neck",
+                          "x": 16.5,
+                          "y": 19.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 20,
+                            "y": 26
+                          },
+                          {
+                            "x": 12,
+                            "y": 26
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 23
+                          },
+                          {
+                            "x": 7,
+                            "y": 21
+                          },
+                          {
+                            "x": 7,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 8,
+                            "y": 11.5
+                          },
+                          {
+                            "x": 10,
+                            "y": 8
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 5
+                          },
+                          {
+                            "x": 19,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 15.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 21
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "name": "happy",
               "useMultipleDirections": false,
               "directions": [
@@ -6335,192 +6716,6 @@
               ]
             },
             {
-              "name": "unsure",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.25,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "egg frames/egg 9.png",
-                      "points": [
-                        {
-                          "name": "head",
-                          "x": 16,
-                          "y": 5.5
-                        },
-                        {
-                          "name": "neck",
-                          "x": 16.5,
-                          "y": 19.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 16,
-                        "y": 16
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 23,
-                            "y": 24.5
-                          },
-                          {
-                            "x": 20,
-                            "y": 26
-                          },
-                          {
-                            "x": 12,
-                            "y": 26
-                          },
-                          {
-                            "x": 10,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 23
-                          },
-                          {
-                            "x": 7,
-                            "y": 21
-                          },
-                          {
-                            "x": 7,
-                            "y": 13.5
-                          },
-                          {
-                            "x": 8,
-                            "y": 11.5
-                          },
-                          {
-                            "x": 10,
-                            "y": 8
-                          },
-                          {
-                            "x": 13.5,
-                            "y": 5
-                          },
-                          {
-                            "x": 19,
-                            "y": 5
-                          },
-                          {
-                            "x": 23,
-                            "y": 9.5
-                          },
-                          {
-                            "x": 25,
-                            "y": 15.5
-                          },
-                          {
-                            "x": 25,
-                            "y": 21
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "egg frames/egg 10.png",
-                      "points": [
-                        {
-                          "name": "head",
-                          "x": 16,
-                          "y": 5.5
-                        },
-                        {
-                          "name": "neck",
-                          "x": 16.5,
-                          "y": 19.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 16,
-                        "y": 16
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 23,
-                            "y": 24.5
-                          },
-                          {
-                            "x": 20,
-                            "y": 26
-                          },
-                          {
-                            "x": 12,
-                            "y": 26
-                          },
-                          {
-                            "x": 10,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 23
-                          },
-                          {
-                            "x": 7,
-                            "y": 21
-                          },
-                          {
-                            "x": 7,
-                            "y": 13.5
-                          },
-                          {
-                            "x": 8,
-                            "y": 11.5
-                          },
-                          {
-                            "x": 10,
-                            "y": 8
-                          },
-                          {
-                            "x": 13.5,
-                            "y": 5
-                          },
-                          {
-                            "x": 19,
-                            "y": 5
-                          },
-                          {
-                            "x": 23,
-                            "y": 9.5
-                          },
-                          {
-                            "x": 25,
-                            "y": 15.5
-                          },
-                          {
-                            "x": 25,
-                            "y": 21
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "name": "cool",
               "useMultipleDirections": false,
               "directions": [
@@ -6804,192 +6999,6 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "egg frames/egg grumpy 2.png",
-                      "points": [
-                        {
-                          "name": "head",
-                          "x": 16,
-                          "y": 5.5
-                        },
-                        {
-                          "name": "neck",
-                          "x": 16.5,
-                          "y": 19.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 16,
-                        "y": 16
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 23,
-                            "y": 24.5
-                          },
-                          {
-                            "x": 20,
-                            "y": 26
-                          },
-                          {
-                            "x": 12,
-                            "y": 26
-                          },
-                          {
-                            "x": 10,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 23
-                          },
-                          {
-                            "x": 7,
-                            "y": 21
-                          },
-                          {
-                            "x": 7,
-                            "y": 13.5
-                          },
-                          {
-                            "x": 8,
-                            "y": 11.5
-                          },
-                          {
-                            "x": 10,
-                            "y": 8
-                          },
-                          {
-                            "x": 13.5,
-                            "y": 5
-                          },
-                          {
-                            "x": 19,
-                            "y": 5
-                          },
-                          {
-                            "x": 23,
-                            "y": 9.5
-                          },
-                          {
-                            "x": 25,
-                            "y": 15.5
-                          },
-                          {
-                            "x": 25,
-                            "y": 21
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "smile",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.25,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "egg frames/egg happy 1.png",
-                      "points": [
-                        {
-                          "name": "head",
-                          "x": 16,
-                          "y": 5.5
-                        },
-                        {
-                          "name": "neck",
-                          "x": 16.5,
-                          "y": 19.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 16,
-                        "y": 16
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 23,
-                            "y": 24.5
-                          },
-                          {
-                            "x": 20,
-                            "y": 26
-                          },
-                          {
-                            "x": 12,
-                            "y": 26
-                          },
-                          {
-                            "x": 10,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 23
-                          },
-                          {
-                            "x": 7,
-                            "y": 21
-                          },
-                          {
-                            "x": 7,
-                            "y": 13.5
-                          },
-                          {
-                            "x": 8,
-                            "y": 11.5
-                          },
-                          {
-                            "x": 10,
-                            "y": 8
-                          },
-                          {
-                            "x": 13.5,
-                            "y": 5
-                          },
-                          {
-                            "x": 19,
-                            "y": 5
-                          },
-                          {
-                            "x": 23,
-                            "y": 9.5
-                          },
-                          {
-                            "x": 25,
-                            "y": 15.5
-                          },
-                          {
-                            "x": 25,
-                            "y": 21
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "egg frames/egg happy 2.png",
                       "points": [
                         {
                           "name": "head",
@@ -8337,7 +8346,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Text",
+          "string": "numbers",
           "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
           "textAlignment": "left",
           "characterSize": 60,
@@ -8360,7 +8369,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Text",
+            "text": "numbers",
             "font": "017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -9142,7 +9151,7 @@
               "parameters": [
                 "eggy_temp",
                 "=",
-                "2"
+                "3"
               ]
             },
             {
@@ -9527,7 +9536,7 @@
                           "parameters": [
                             "random_num",
                             "<",
-                            "2"
+                            "3"
                           ]
                         }
                       ],
@@ -9872,7 +9881,7 @@
                       "parameters": [
                         "eggy_temp",
                         ">",
-                        "1"
+                        "2"
                       ]
                     },
                     {
@@ -9882,7 +9891,7 @@
                       "parameters": [
                         "eggy_temp",
                         "<",
-                        "10"
+                        "9"
                       ]
                     }
                   ],
@@ -9916,6 +9925,16 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "eggy_temp",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetBooleanVariable"
                       },
                       "parameters": [
@@ -9941,6 +9960,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "eggy_temp",
+                        "=",
+                        "11"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "SetBooleanVariable"
@@ -10158,6 +10187,196 @@
                         "eggy_temp",
                         "-",
                         "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DraggableBehavior::Dragged"
+                      },
+                      "parameters": [
+                        "hats",
+                        "Draggable"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "eggy_temp",
+                        ">",
+                        "7"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "hats",
+                        "is_worn",
+                        "=",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "eggy",
+                        "Animation",
+                        "=",
+                        "\"unsure\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DraggableBehavior::Dragged"
+                      },
+                      "parameters": [
+                        "hats",
+                        "Draggable"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "eggy_temp",
+                        "<",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "hats",
+                        "is_worn",
+                        "=",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "eggy",
+                        "Animation",
+                        "=",
+                        "\"smile\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DraggableBehavior::Dragged"
+                      },
+                      "parameters": [
+                        "bucket",
+                        "Draggable"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "eggy_temp",
+                        ">",
+                        "7"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "pouring",
+                        "=",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "eggy",
+                        "Animation",
+                        "=",
+                        "\"smile\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DraggableBehavior::Dragged"
+                      },
+                      "parameters": [
+                        "bucket",
+                        "Draggable"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "eggy_temp",
+                        "<",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "pouring",
+                        "=",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "eggy",
+                        "Animation",
+                        "=",
+                        "\"unsure\""
                       ]
                     }
                   ]
