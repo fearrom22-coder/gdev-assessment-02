@@ -1209,7 +1209,7 @@
       {
         "file": "bucket fames/water bucket0.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"bucket fames/water bucket0.png\",\"extension\":\".png\"}",
         "name": "bucket fames/water bucket0.png",
         "smoothed": false,
         "userAdded": false
@@ -1331,6 +1331,22 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/017232541c561313892baaf3c91d69acae462dbd99f9d519bdee22ae597b41b8_kenvector_future_thin.ttf",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "bucket fames/water bucket0 - Copy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bucket fames/water bucket0 - Copy.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/bucket fames/water bucket0 - Copy.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "bucket fames/water bucket0 - Copy",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1445,43 +1461,49 @@
       "variables": [
         {
           "name": "eating",
-          "persistentUuid": "e45149ee-3ed2-4d60-9787-9598d506d2ff",
+          "persistentUuid": "345c12be-2a78-4199-9f17-5b5356e2b9e0",
           "type": "boolean",
           "value": false
         },
         {
           "name": "eggy_temp",
-          "persistentUuid": "1e035f9b-900e-4a5b-a683-fc0aec0f8120",
+          "persistentUuid": "8ae0cc34-a4f4-4542-ac9e-f6c8f04363d9",
           "type": "number",
           "value": 0
         },
         {
           "name": "temp_issues",
-          "persistentUuid": "a6d090cb-5b6b-48ed-ba8a-6b22ba4f1ea4",
+          "persistentUuid": "ffbd4206-0ba8-4d65-a49f-6e2457600966",
           "type": "boolean",
           "value": false
         },
         {
           "name": "random_num",
-          "persistentUuid": "36fb3dd1-9bc1-4c39-9c18-d9b2eb4aff89",
+          "persistentUuid": "a65be8e5-76ce-4a59-8432-2f4a482f8680",
           "type": "number",
           "value": 0
         },
         {
           "name": "hat_count",
-          "persistentUuid": "f2769305-0c2d-4f58-8946-39e6a0196358",
+          "persistentUuid": "eaa4d58f-1a49-49aa-b4f2-f875fd5e2f6e",
           "type": "number",
           "value": 0
         },
         {
           "name": "dead",
-          "persistentUuid": "db3c450e-823b-4594-b58e-824ec6ac46ea",
+          "persistentUuid": "b721d933-9c21-41c1-801a-798bcc760541",
           "type": "boolean",
           "value": false
         },
         {
           "name": "pouring",
-          "persistentUuid": "af638a6a-c44a-4606-83e1-5da4625c3e82",
+          "persistentUuid": "dbde239f-be54-4ef7-b618-c07d29ee6185",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "was_pouring",
+          "persistentUuid": "f913b9ee-7ec6-4620-a86a-716fe8ab55e9",
           "type": "boolean",
           "value": false
         }
@@ -1666,26 +1688,9 @@
           "name": "bucket",
           "persistentUuid": "2fe8ede1-b066-470c-9c34-7e1113695db7",
           "width": 132,
-          "x": 999,
-          "y": 391,
+          "x": 1024,
+          "y": 424,
           "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 71,
-          "keepRatio": true,
-          "layer": "",
-          "name": "water_drop",
-          "persistentUuid": "985f6045-76cf-452c-aec0-3df26ed52b01",
-          "width": 71,
-          "x": 611,
-          "y": 216,
-          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1720,6 +1725,23 @@
           "x": 538,
           "y": 579,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 186,
+          "keepRatio": true,
+          "layer": "",
+          "name": "bucketholder",
+          "persistentUuid": "ac36019a-214a-4ccd-b134-7de342930595",
+          "width": 132,
+          "x": 604,
+          "y": 179,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8401,6 +8423,7 @@
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
@@ -8474,7 +8497,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 10,
-                        "y": 33.5
+                        "y": 24
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -8526,7 +8549,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 10,
-                        "y": 33.5
+                        "y": 24
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -8590,7 +8613,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 10,
-                        "y": 33.5
+                        "y": 24
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -8642,7 +8665,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 10,
-                        "y": 33.5
+                        "y": 24
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -8694,7 +8717,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 10,
-                        "y": 33.5
+                        "y": 24
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -8819,6 +8842,87 @@
             "LabelText": "restart",
             "PressedLabelOffsetY": 2
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "bucketholder",
+          "persistentUuid": "20ee92f2-288b-4907-b9f4-b60283647dcd",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "BUCKET",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "bucket fames/water bucket0 - Copy",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 9,
+                          "y": 21
+                        },
+                        {
+                          "name": "Point2",
+                          "x": 19,
+                          "y": 23.5
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 17.5,
+                        "y": 23
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 17.5,
+                        "y": 26.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13,
+                            "y": 19.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 19.5
+                          },
+                          {
+                            "x": 24.5,
+                            "y": 29.5
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 31.5
+                          },
+                          {
+                            "x": 14.5,
+                            "y": 31.5
+                          },
+                          {
+                            "x": 13,
+                            "y": 29.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -9030,6 +9134,9 @@
           },
           {
             "objectName": "water_drop"
+          },
+          {
+            "objectName": "bucketholder"
           }
         ]
       },
@@ -9118,6 +9225,16 @@
                 "=",
                 "390\n"
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "was_pouring",
+                "False",
+                ""
+              ]
             }
           ]
         },
@@ -9205,6 +9322,16 @@
                 "1000",
                 "=",
                 "390\n"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "was_pouring",
+                "False",
+                ""
               ]
             }
           ]
@@ -9428,7 +9555,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "temp control",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -10019,7 +10145,56 @@
                       },
                       "parameters": [
                         "bucket",
-                        "water_drop",
+                        "bucketholder",
+                        "",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DraggableBehavior::Dragged"
+                      },
+                      "parameters": [
+                        "bucket",
+                        "Draggable"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "bucket",
+                        "=",
+                        "bucketholder.X(\"Point\")",
+                        "=",
+                        "bucketholder.Y(\"Point\")"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DraggableBehavior::Dropped"
+                      },
+                      "parameters": [
+                        "bucket",
+                        "Draggable"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "bucket",
+                        "bucketholder",
                         "",
                         "",
                         ""
@@ -10034,86 +10209,78 @@
                       "parameters": [
                         "bucket",
                         "=",
-                        "water_drop.X()",
+                        "bucketholder.X(\"Point2\")",
                         "=",
-                        "water_drop.Y()"
+                        "bucketholder.Y(\"Point2\")"
                       ]
-                    }
-                  ],
-                  "events": [
+                    },
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "DraggableBehavior::Dropped"
-                          },
-                          "parameters": [
-                            "bucket",
-                            "Draggable"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetBooleanVariable"
-                          },
-                          "parameters": [
-                            "pouring",
-                            "True",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "bucket",
-                            "Animation",
-                            "=",
-                            "\"pouring\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Wait"
-                          },
-                          "parameters": [
-                            "0.3"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                          },
-                          "parameters": [
-                            "bucket",
-                            "Animation",
-                            "=",
-                            "\"splashing\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ResetTimer"
-                          },
-                          "parameters": [
-                            "",
-                            "\"water timer\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetNumberVariable"
-                          },
-                          "parameters": [
-                            "eggy_temp",
-                            "-",
-                            "2"
-                          ]
-                        }
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "pouring",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "bucket",
+                        "Animation",
+                        "=",
+                        "\"pouring\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "bucket",
+                        "Animation",
+                        "=",
+                        "\"splashing\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"water timer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "eggy_temp",
+                        "-",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "was_pouring",
+                        "True",
+                        ""
                       ]
                     }
                   ]
@@ -10149,6 +10316,42 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "DraggableBehavior::Dropped"
+                      },
+                      "parameters": [
+                        "bucket",
+                        "Draggable"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "was_pouring",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "was_pouring",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "BooleanVariable"
                       },
                       "parameters": [
@@ -10165,7 +10368,7 @@
                         "",
                         "\"water timer\"",
                         ">=",
-                        "1"
+                        "0.8"
                       ]
                     }
                   ],
@@ -10314,7 +10517,7 @@
                         "value": "BooleanVariable"
                       },
                       "parameters": [
-                        "pouring",
+                        "was_pouring",
                         "=",
                         ""
                       ]
@@ -10361,7 +10564,7 @@
                         "value": "BooleanVariable"
                       },
                       "parameters": [
-                        "pouring",
+                        "was_pouring",
                         "=",
                         ""
                       ]
